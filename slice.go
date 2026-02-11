@@ -52,7 +52,14 @@ type My struct {
 	favourite []Favourite
 }
 
-func main() {
+// menampilkan pertambahan
+
+type Num struct {
+	first  []int
+	second []int
+}
+
+func tasks() {
 	we := We{
 		are: Are{
 			the: The{
@@ -104,6 +111,11 @@ func main() {
 		},
 	}
 
+	num := Num{
+		first:  []int{5, 10, 15},
+		second: []int{7, 9, 22},
+	}
+
 	fmt.Println(we.are.the.best)
 
 	fmt.Println(hello.world)
@@ -111,5 +123,7 @@ func main() {
 	fmt.Println(obj.str[3][1][2].man[0].tech.academy)
 
 	fmt.Println(my[0].favourite[3].fruit.is)
+
+	fmt.Println(num.first[1] + num.second[2])
 
 }
